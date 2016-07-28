@@ -1,0 +1,306 @@
+/* general */
+
+body {
+  margin-top: 70px;
+  font-family: 'Raleway' , sans-serif;
+  font-size: 16px;
+  background: url('http://previews.123rf.com/images/Elenathewise/Elenathewise1408/elenathewise140800035/30610159-Grauen-Holz-Hintergrund-der-verwitterten-Distressed-rustikalem-Holz-mit-verblichenen-wei-er-Farbe-ze-Lizenzfreie-Bilder.jpg') top left repeat;
+}
+
+/* global */
+
+h1,h2,h3,h4,h5,h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1,h2 {
+  margin: 0 0 40px;
+}
+
+h3 {
+  margin: 20 px 0;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  margin; 0 0 15px;
+}
+
+p.lead {
+  font-weight:  normal;
+}
+
+a:link, a:visited {
+  color: #dd5638;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #c9302c;
+}
+
+button, input, .btn, a.btn {
+  webkit-font-smooting: antialiased;
+  text-rendering: optimizelegibility;
+  color: white;
+}
+
+#name {
+  color: #dd5638;
+}
+
+img {
+  max-width: 100%;
+}
+
+.modal-content {
+  background:  lightgray;
+  padding:  0 0 0 20px;
+}
+
+.badge.social {
+  background: #ccc;
+  font-size: 24px;
+  height: 40px;
+  width:  40px;
+  text-align:  center;
+  line-height: 42px;
+  margin:  0 5px 20px 0;
+  padding: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: white;
+}
+
+.badge.social.twitter:hover {
+  background: #55acee;
+}
+
+.badge.social.linkedin:hover {
+  background: #3b5998;
+}
+
+.badge.social.github:hover {
+  background:  #000000;
+}
+/* hero */
+
+#hero {
+  background: url('http://previews.123rf.com/images/Elenathewise/Elenathewise1408/elenathewise140800035/30610159-Grauen-Holz-Hintergrund-der-verwitterten-Distressed-rustikalem-Holz-mit-verblichenen-wei-er-Farbe-ze-Lizenzfreie-Bilder.jpg') 50% 0 repeat fixed;
+  min-height: 500px;
+  padding: 40px 0;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+#hero article {
+  width: 100%;
+  text-align: center;
+}
+
+#hero .hero-text {
+  margin-top: 30px;
+  display: inline;
+}
+
+#big-buttons {
+  margin: 30px 0 60;
+  text-align: center;
+  display: ;
+}
+
+#big-buttons .big{
+  display: inline-block;
+  margin: 0 2% 0 2%;
+  width 40%;
+  background: #3e4249;
+  color: white;
+  padding: 10px 20px 30px;
+  position: relative;
+}
+
+.big {
+  border-radius:  100%;
+  -webkit-border-radius:  100%;
+  -moz-border-radius:  100%;
+  height: 175px;
+  width: 175px;
+}
+
+.big h3 {
+  padding-top: 25px;
+}
+
+#big-buttons .active.big  {
+  background: #dd5638;
+}
+
+#big-buttons a {
+  color: white;
+  text-decoration: none;
+}
+
+.blog-button {
+  background: #dd5638;
+}
+
+section {
+  padding: 80px 0;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+.section-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+section h3 {
+  margin: 30px 0 10px;
+}
+
+section p {
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
+#opt-in {
+  background: #3e4249;
+  padding: 20px 0;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-size: 1.2em;
+}
+
+#opt-in p {
+  margin: 7px 0 0 0;
+}
+
+#feature {
+  background:  url('http://derrisfelder.com/wp-content/uploads/2016/01/Motivation.jpg') 50% 100% repeat fixed;
+  backgroune-size: cover;
+  text-align: center;
+  color:  white;
+}
+
+#instructor {
+  background: url('http://www4.uwm.edu/learningobjects/images/happy_individualism_trs3-me_1.jpg')  90% -10px repeat;
+  color: #000000;
+}
+
+#instructor .num {
+  display:  table;
+  font-size: 30px;
+  font-weight: bold;
+  color:  white;
+  line-height: 24px;
+  height: 150px;
+  width:  150px;
+  text-align: center;
+  background: #dd5638;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+#instructor .num .num-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#instructor .num span {
+  display:  block;
+  verical-align:  center;
+  font-weight: normal;
+}
+
+#instructor .container {
+  background:  rgba( 255, 255, 255, 0.3);
+}
+
+footer {
+  background: #3e4249;
+  color: white;
+  padding: 20px 0 10px;
+  font-size: 12px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a:link, footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color:#dd5638;
+  font-weight: bold;
+}
+
+footer li {
+  padding:  10px;
+}
+
+.copy {
+  padding:  10px
+}
+
+@media screen and ( max-width : 991px)  {
+
+  #opt-in p {
+    margin: 0 0 10px;
+  }
+
+  #feature iframe {
+    height:  240px;
+  }
+
+   #instructor {
+    background: url('http://www4.uwm.edu/learningobjects/images/happy_individualism_trs3-me_1.jpg') -450px -5px ;
+  }
+
+  #instructor .container {
+  background:  rgba( 255, 255, 255, 0.4);
+}
+
+}
+
+@media screen and ( max-width : 700px) {
+
+  #instructor .num {
+    margin:  10px 0 0 0;
+    height: 100px;
+    width: 100px;
+    font-size:  22px;
+  }
+
+  #instructor .container {
+  background:  rgba( 255, 255, 255, 0.4);
+}
+
+  #instructor .num span {
+    font-size: 16px;
+  }
+
+  #instructor {
+    background: url('http://www4.uwm.edu/learningobjects/images/happy_individualism_trs3-me_1.jpg') -450px -5px ;
+  }
+
+}
