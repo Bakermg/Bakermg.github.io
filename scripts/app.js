@@ -188,18 +188,18 @@ var Location = function (data) {
 Location.prototype.toggle = function () {
     if (this.marker.getAnimation() === null) {
         this.marker.setAnimation(google.maps.Animation.BOUNCE);
-        
+
     } else {
         this.marker.setAnimation(null);
     }
-    
+
     this.infoWindow.open();
 };
 
 Location.prototype.stopToggle = function () {
     this.marker.setAnimation(null);
     this.infoWindow.close();
-    
+
 };
 
 var ViewModel = function () {
@@ -209,7 +209,7 @@ var ViewModel = function () {
     var clickedItem = null;
     self.locationList = ko.observableArray([]);
     self.search = ko.observable('');
-    
+
 
     //Set timeout to handle google maps error
     this.mapRequestTimeout = setTimeout(function () {
@@ -254,7 +254,7 @@ var ViewModel = function () {
 
     // Add location marker and event listener for each location
     self.locationList().forEach(function (locItem) {
-        
+
         locItem.marker.setMap(map);
 
         locItem.marker.addListener('click', function () {
@@ -265,17 +265,17 @@ var ViewModel = function () {
             locItem.toggle();
             locItem.infoWindow.open(map, locItem.marker);
             getLocalFlickr(locItem);
-            
+
             clickedItem = locItem;
             map.panTo(locItem.marker.position);
             locItem.marker.setMap(map);
         });
-         
+
         var contentString = '<div id="iw-contianer">' +
             '<header class="iw-title">' + '<h3>' + locItem.marker.title + '</h3>' + '</header></div>';
-        
+
         locItem.infoWindow.setContent(contentString);
-       
+
 
         locItem.infoWindow.addListener('closeclick', function () {
             locItem.stopToggle();
@@ -302,8 +302,8 @@ var ViewModel = function () {
 
     //Get local img for the place clicked from flickr api
     function getLocalFlickr(locItem) {
-    
-        var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+
+        var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         $.getJSON(flickerAPI,{
                 tags: locItem.marker.tags,
                 tagmode: "any",
@@ -313,11 +313,11 @@ var ViewModel = function () {
                     var flickrImgsrc = data.items[1].media.m;
                     $("#iw-contianer > img").remove();
                     $("<img>").attr("src",flickrImgsrc).appendTo("#iw-contianer");
-                })  
+                })
 
             .fail(function(jqXHR, textStatus, errorThrown) {
             $('<h3>Request for Flickr resources failed. Please re-load page</h3>').appendTo("#iw-contianer");
-        }); 
+        });
     }
 
     self.filter = function () {
